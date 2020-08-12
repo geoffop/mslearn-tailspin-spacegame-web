@@ -1,11 +1,11 @@
 trigger:
   - '*'
   
-  pool:
-  - vmImage: 'ubuntu-18.04'
-    demands:
-      - npm
-
+pool:
+  vmImage: 'ubuntu-18.04'
+  demands:
+    - npm
+  
   steps:
   - task: UseDotNet@2
     displayName: 'Use .NET Core SDK 3.1.300'
